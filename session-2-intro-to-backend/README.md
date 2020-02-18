@@ -1,5 +1,5 @@
 # Hackschool Session 2: Introduction to Backend Development
-**Location**: Covel 227, UCLA
+**Location**: Boelter 5249, UCLA
 
 **Time**: 6-8pm
 
@@ -205,8 +205,8 @@ const saySomething = () => {
 
 We can also have a function that returns nothing.
 ```JS
-const printHello = () => {
-  console.log('Heeeeeeeeeeello');
+const saySomething2 = () => {
+  console.log("I'm giving up on you");
   // no return statement
 };
 ```
@@ -222,8 +222,8 @@ const printNoot = () => {
 
 We can even call other functions within some function
 ```JS
-const bigBrainMath = () => {
-  return plus(2, 2) - 1;
+const double = (x) => {
+  return plus(x, x);
 };
 ```
 
@@ -537,7 +537,6 @@ For now, our server only serves a local HTML file that doesn't change. The true 
 ```JS
 app.get('/random', (request, response) => {
   response.send('<!DOCTYPE html><html><body>Your random number is: ' + Math.random() + '</body></html>');
-  response.end();
 });
 ```
 
